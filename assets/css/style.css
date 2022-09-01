@@ -78,7 +78,7 @@ header {
    background-position: center;
    background-size: cover;
 
-   height: 670px;
+   min-height: 670px;
 }
 
 .column {
@@ -442,4 +442,82 @@ ul li {
 a {
    text-decoration: none;
    color: #0079c7;
+}
+
+.menuMobile {
+   display: none;
+   height: 40px;
+   width: 40px;
+   margin: 40px 40px 40px 0px;
+}
+
+.mm_line {
+   height: 3px;
+   background-color: var(--bg-nav);
+}
+
+/* === MEDIA === */
+
+@media (max-width: 768px) {
+   .banner-headline h1 {
+      font-size: 50px;
+   }
+   .banner-headline h2 {
+      font-size: 15px;
+      max-width: 250px;
+   }
+
+   .banner-options {
+      height: auto;
+      flex-direction: column;
+   }
+
+   .banner-headline {
+      padding: 100px 0px 200px 20px;
+   }
+
+   .container {
+      flex-direction: column;
+   }
+
+   #geral section,
+   #geral aside {
+      padding: 20px;
+   }
+
+   footer .footer_menu {
+      flex-direction: column;
+   }
+
+   footer .footer_area {
+      flex-direction: column;
+      padding: 20px;
+   }
+
+   header .container {
+      flex-direction: row;
+   }
+
+   .menu nav ul {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+   }
+
+   header {
+      height: auto;
+   }
+
+   .logo {
+      padding: 20px;
+   }
+
+   .menuMobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   }
 }
